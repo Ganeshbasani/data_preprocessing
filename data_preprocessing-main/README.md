@@ -6,13 +6,13 @@ Upload your  CSV file, automatically clean and preprocess it, and download a cle
 
 ---
 
-## 📌 Project Overview
+Project Overview
 
 This project provides a web-based interface to clean and preprocess  data. It handles missing values, removes outliers, formats date fields, standardizes text, and prepares the dataset for further analysis or visualization — all in a few clicks!
 
 ---
 
-## 🧾 Dataset
+ Dataset
 
 The app expects a dataset similar to [Netflix Titles Dataset](https://www.kaggle.com/datasets/shivamb/netflix-shows), typically structured with columns like:
 
@@ -33,7 +33,7 @@ Sample input used: `netflix_titles.csv`
 
 ---
 
-## 🧹 Features
+ Features
 
 - ✅ Missing value imputation (text and numeric columns)
 - ✅ Standardizes text (trimming and lowercasing)
@@ -45,16 +45,9 @@ Sample input used: `netflix_titles.csv`
 
 ---
 
-## 🚀 How to Run Locally
+ How to Run Locally
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/somanaboinachakradhar/data_preprocessing.git
-cd data_preprocessing
-```
-
-### 2. Install dependencies
+2. Install dependencies
 
 It’s recommended to use a virtual environment.
 
@@ -70,7 +63,7 @@ pip install -r requirements.txt
 - `scipy`
 - `openpyxl`
 
-### 3. Run the app
+ 3. Run the app
 
 ```bash
 streamlit run pycode.py
@@ -78,7 +71,7 @@ streamlit run pycode.py
 
 ---
 
-## 📥 Example Usage
+ Example Usage
 
 1. Launch the Streamlit app
 2. Upload a Dataset CSV file
@@ -88,7 +81,7 @@ streamlit run pycode.py
 
 ---
 
-## 📂 Project Structure
+ Project Structure
 
 ```
 ├── pycode.py                # Main Streamlit app
@@ -99,9 +92,9 @@ streamlit run pycode.py
 
 ---
 
-## 🧠 How It Works (Behind the Scenes)
+ How It Works (Behind the Scenes)
 
-### `clean_data(df)`
+ `clean_data(df)`
 - Fills missing `object` fields with `"Unknown"`
 - Fills numeric `int/float` fields with median values
 - Trims and lowers all text columns
@@ -110,19 +103,11 @@ streamlit run pycode.py
 - Removes duplicates
 - Clips outliers beyond 1.5*IQR
 
-### `to_excel_download(df)`
+`to_excel_download(df)`
 - Converts cleaned DataFrame into downloadable Excel format using `openpyxl`
 
----
-
-## ✍️ Author
-
-**Your Name**  
-📫 [chakrisomanaboina432@gmail.com](mailto:chakrisomanaboina432@gmail.com)  
-🔗[GitHub](https://github.com/somanaboinachakradhar)
 
 ---
-
-## 📄 License
+ License
 
 MIT License — feel free to use and modify!
